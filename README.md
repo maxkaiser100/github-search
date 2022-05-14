@@ -10,8 +10,8 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/maxkaiser100/github-search.git
+- Live Site URL: https://maxkaiser100.github.io/github-search/
 
 ## My process
 
