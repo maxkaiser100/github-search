@@ -1,0 +1,203 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    margin: 0rem 0rem;
+    padding: 0rem;
+}
+
+body {
+    display: flex;
+    min-height: 250vh;
+    justify-content: center;
+    margin: 0px 0px; 
+    background-color: rgb(19, 28, 47);
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.whiteText {
+    color: rgb(255, 255, 255);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+    max-width: 50rem;
+    margin: 6rem;
+    
+}
+
+.topNav {
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+    margin-bottom: 2rem;
+    .logoName {
+        font-size: 1.5rem;
+    }
+    .preferenceToggle {
+        text-transform: uppercase;
+        font-size: .75rem;
+        letter-spacing: .25rem;
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 1rem;
+        }
+    }
+}
+
+.searchBar {
+    background-color: rgb(30, 42, 72);
+    width: 40rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+    .searchInput {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        padding: 0 1rem;
+    }
+    input {
+        padding: .5rem;
+        border: 0;
+        width: 20rem;
+        background-color: rgb(30, 42, 72);
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.733);
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.733);
+    }
+    button {
+        background-color: #0278ff;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.1rem;
+        padding: .75rem 1.75rem;
+        border-radius: 10px;
+    }
+}
+
+.card{
+    width: 40rem;
+    background-color: rgb(30, 42, 72);
+    padding: 3rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    .iconSide {
+        width: 30%;
+        .iconImage img {
+            width: 65%;
+            border-radius: 100px;
+        }
+    }
+    
+.infoSide {
+    width: 70%;
+    .basicProfile {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .userName {
+            font-size: 1.5rem;
+            letter-spacing: .25rem;
+            padding: .25rem 0rem;
+            font-family: 'Roboto Slab', serif;
+        }
+        .login {
+            font-family: 'Roboto Slab', serif;
+            padding: 1rem 0;
+            color: #255fa9;
+        }
+        .userAddress {
+            padding: 1rem;
+        }
+        .rightProfile {
+            font-family: 'Roboto Slab', serif;
+            color: rgba(255, 255, 255, 0.514);
+            padding-top: .5rem;
+        }
+    }
+    .profile {
+        color:rgba(255, 255, 255, 0.493);
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+
+.repoInfo {
+    display: flex;
+    margin: 2rem 0;
+    padding: .5rem .5rem;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(19, 28, 47);
+    border-radius: 20px;
+    justify-content: space-around;
+    .repos, .followers, .following {
+        padding: 1rem 1rem;
+        font-size: .75rem;
+        color: rgba(255, 255, 255, 0.514);
+    }
+    .repoNumber, .followersNumber, .followingNumber {
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        padding-top: .5rem;
+    }
+}
+
+.locaters {
+    display: flex;
+}
+
+.leftLocator, .rightLocator {
+    padding: 1rem 0rem;
+}
+
+.city, .url, .twitter, .company {
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    max-width: 13rem;
+    padding-right: 0 2rem;
+    color: rgba(255, 255, 255, 0.603);
+    word-break: break-all;
+    font-family: 'Roboto Slab', serif;
+    font-size: .8rem;
+    a:link {
+        color: rgb(255, 255, 255);
+    }
+    img {
+        padding: .5rem 1rem;
+    }
+}
+
+
+
+
+
+}
+
+
+

@@ -1,0 +1,271 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  margin: 0rem 0rem;
+  padding: 0rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 250vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px;
+  background-color: #131c2f;
+  font-family: 'Roboto Slab', serif;
+}
+
+.whiteText {
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  margin: 6rem;
+}
+
+.topNav {
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.topNav .logoName {
+  font-size: 1.5rem;
+}
+
+.topNav .preferenceToggle {
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topNav .preferenceToggle img {
+  margin-left: 1rem;
+}
+
+.searchBar {
+  background-color: #1e2a48;
+  width: 40rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar .searchInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar img {
+  padding: 0 1rem;
+}
+
+.searchBar input {
+  padding: .5rem;
+  border: 0;
+  width: 20rem;
+  background-color: #1e2a48;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.searchBar ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.searchBar :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.searchBar ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.searchBar ::placeholder {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.searchBar button {
+  background-color: #0278ff;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  padding: .75rem 1.75rem;
+  border-radius: 10px;
+}
+
+.card {
+  width: 40rem;
+  background-color: #1e2a48;
+  padding: 3rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.card .iconSide {
+  width: 30%;
+}
+
+.card .iconSide .iconImage img {
+  width: 65%;
+  border-radius: 100px;
+}
+
+.card .infoSide {
+  width: 70%;
+}
+
+.card .infoSide .basicProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card .infoSide .basicProfile .userName {
+  font-size: 1.5rem;
+  letter-spacing: .25rem;
+  padding: .25rem 0rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card .infoSide .basicProfile .login {
+  font-family: 'Roboto Slab', serif;
+  padding: 1rem 0;
+  color: #255fa9;
+}
+
+.card .infoSide .basicProfile .userAddress {
+  padding: 1rem;
+}
+
+.card .infoSide .basicProfile .rightProfile {
+  font-family: 'Roboto Slab', serif;
+  color: rgba(255, 255, 255, 0.514);
+  padding-top: .5rem;
+}
+
+.card .infoSide .profile {
+  color: rgba(255, 255, 255, 0.493);
+  font-family: 'Roboto Slab', serif;
+}
+
+.card .repoInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+  padding: .5rem .5rem;
+  font-family: 'Roboto Slab', serif;
+  background-color: #131c2f;
+  border-radius: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card .repoInfo .repos, .card .repoInfo .followers, .card .repoInfo .following {
+  padding: 1rem 1rem;
+  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.514);
+}
+
+.card .repoInfo .repoNumber, .card .repoInfo .followersNumber, .card .repoInfo .followingNumber {
+  color: white;
+  font-size: 1.5rem;
+  padding-top: .5rem;
+}
+
+.card .locaters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .leftLocator, .card .rightLocator {
+  padding: 1rem 0rem;
+}
+
+.card .city, .card .url, .card .twitter, .card .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13rem;
+  max-width: 13rem;
+  padding-right: 0 2rem;
+  color: rgba(255, 255, 255, 0.603);
+  word-break: break-all;
+  font-family: 'Roboto Slab', serif;
+  font-size: .8rem;
+}
+
+.card .city a:link, .card .url a:link, .card .twitter a:link, .card .company a:link {
+  color: white;
+}
+
+.card .city img, .card .url img, .card .twitter img, .card .company img {
+  padding: .5rem 1rem;
+}
+/*# sourceMappingURL=style.css.map */

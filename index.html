@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+<body>
+  <main class="container">
+    <div class="topNav">
+      <div class="logoName">
+        devfinder
+      </div>
+      <div class="preferenceToggle">
+        Light
+        <img src="/assets/icon-sun.svg" alt="">
+      </div>
+    </div>
+    
+    <form class="searchUser">
+    <div class="searchBar">
+      
+        <div class="searchInput">
+          <img src="/assets/icon-search.svg" alt="">
+          <input type="text" name="userSearch" id="form-input" placeholder="Search Github username...">
+        </div>
+        <button class="searchButton">
+          Search
+        </button>
+    
+    </div>
+  </form>
+
+    <div class="card">
+      <div class="iconSide">
+        <div class="iconImage">
+          <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="">
+        </div>
+      </div>
+      
+      <div class="infoSide">
+        
+        <div class="basicProfile">
+          
+          <div class="leftProfile">
+            <div class="userName">
+              The Octocat
+            </div>
+            <div class="login">
+              @octocat
+            </div>
+           
+          </div>
+          
+          <div class="rightProfile">
+            Joined 25 Jan 2011
+          </div>
+         
+        </div>
+
+        <div class="profile">
+          This profile has no bio.
+        </div>
+        <div class="repoInfo">
+          
+          <div class="repos">
+            <div class="innerTitle">
+              Repos
+            </div>
+            <div class="repoNumber">
+              8
+            </div>
+          </div>
+          
+          <div class="followers">
+            <div class="innerTitle">
+              Followers
+            </div>
+            <div class="followersNumber">
+              3938
+            </div>
+          </div>
+          
+          <div class="following">
+            <div class="innerTitle">
+            Following
+            </div>
+            <div class="followingNumber">
+              9
+            </div>
+          </div>
+
+        </div>
+
+        <div class="locaters">
+          <div class="leftLocator">
+            <div class="city">
+              <img src="/assets/icon-location.svg" alt="">
+              <div class="cityText">Not available</div>
+              
+            </div>
+            <div class="url">
+              <img src="/assets/icon-website.svg" alt="">
+              <div class="urlText">
+                <a href="#">https://github.blog</a> 
+              </div>
+            </div>
+          
+          </div>
+          <div class="rightLocator">
+            <div class="twitter">
+              <img src="/assets/icon-twitter.svg" alt="">
+              <div class="twitterText">
+              Tweet
+            </div>
+            </div>
+            <div class="company">
+              <img src="/assets/icon-company.svg" alt="">
+              <div class="companyText">
+                agithub
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+ <script src="app.js"></script>
+</body>
+</html>
