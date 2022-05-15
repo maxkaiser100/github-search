@@ -1,271 +1,212 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
-  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
 }
 
 p {
-  margin: 0rem 0rem;
-  padding: 0rem;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
   display: flex;
-  min-height: 250vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0px 0px;
-  background-color: #131c2f;
-  font-family: 'Roboto Slab', serif;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: rgb(19, 28, 47);
+  align-items: center;
 }
 
-.whiteText {
-  color: white;
+.white-text {
+  color: rgb(255, 255, 255);
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
   max-width: 50rem;
-  margin: 6rem;
 }
 
-.topNav {
-  width: 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.top-nav {
+  width: 100%;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   color: white;
-  font-family: 'Roboto Slab', serif;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
+  font-family: "Roboto Slab", serif;
+  align-items: center;
+  margin: 2rem 0;
 }
-
-.topNav .logoName {
+.top-nav .logo-name {
   font-size: 1.5rem;
 }
-
-.topNav .preferenceToggle {
+.top-nav .preference-toggle {
   text-transform: uppercase;
-  font-size: .75rem;
-  letter-spacing: .25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-.topNav .preferenceToggle img {
+.top-nav .preference-toggle img {
   margin-left: 1rem;
 }
 
-.searchBar {
-  background-color: #1e2a48;
-  width: 40rem;
+.search-user {
+  width: 100%;
+}
+
+.search-bar {
+  background-color: rgb(30, 42, 72);
+  width: 100%;
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-radius: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
-.searchBar .searchInput {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.search-bar .search-input {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  flex-grow: 1;
 }
-
-.searchBar img {
+.search-bar img {
   padding: 0 1rem;
 }
-
-.searchBar input {
-  padding: .5rem;
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
   border: 0;
-  width: 20rem;
-  background-color: #1e2a48;
+  background-color: rgb(30, 42, 72);
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.733);
+  margin-right: 2rem;
 }
-
-.searchBar ::-webkit-input-placeholder {
+.search-bar ::placeholder {
   color: rgba(255, 255, 255, 0.733);
 }
-
-.searchBar :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.733);
-}
-
-.searchBar ::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.733);
-}
-
-.searchBar ::placeholder {
-  color: rgba(255, 255, 255, 0.733);
-}
-
-.searchBar button {
+.search-bar button {
   background-color: #0278ff;
   color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.1rem;
-  padding: .75rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 10px;
+  border: none;
 }
 
 .card {
-  width: 40rem;
-  background-color: #1e2a48;
+  width: 100%;
+  background-color: rgb(30, 42, 72);
   padding: 3rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
 }
-
-.card .iconSide {
+.card .icon-side {
   width: 30%;
 }
-
-.card .iconSide .iconImage img {
-  width: 65%;
-  border-radius: 100px;
+.card .icon-side .icon-image img {
+  width: 8rem;
+  border-radius: 50%;
 }
 
-.card .infoSide {
+.info-side {
   width: 70%;
 }
-
-.card .infoSide .basicProfile {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.info-side .basic-profile {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
-.card .infoSide .basicProfile .userName {
+.info-side .basic-profile .user-name {
   font-size: 1.5rem;
-  letter-spacing: .25rem;
-  padding: .25rem 0rem;
-  font-family: 'Roboto Slab', serif;
+  letter-spacing: 0.25rem;
+  padding: 0.25rem 0rem;
 }
-
-.card .infoSide .basicProfile .login {
-  font-family: 'Roboto Slab', serif;
+.info-side .basic-profile .login {
   padding: 1rem 0;
   color: #255fa9;
 }
-
-.card .infoSide .basicProfile .userAddress {
+.info-side .basic-profile .user-address {
   padding: 1rem;
 }
-
-.card .infoSide .basicProfile .rightProfile {
-  font-family: 'Roboto Slab', serif;
+.info-side .basic-profile .right-profile {
+  font-family: "Roboto Slab", serif;
   color: rgba(255, 255, 255, 0.514);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
-
-.card .infoSide .profile {
+.info-side .profile {
   color: rgba(255, 255, 255, 0.493);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
-.card .repoInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.repo-info {
   display: flex;
   margin: 2rem 0;
-  padding: .5rem .5rem;
-  font-family: 'Roboto Slab', serif;
-  background-color: #131c2f;
+  padding: 0.5rem 0.5rem;
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(19, 28, 47);
   border-radius: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
-.card .repoInfo .repos, .card .repoInfo .followers, .card .repoInfo .following {
+.repo-info .repos, .repo-info .followers, .repo-info .following {
   padding: 1rem 1rem;
-  font-size: .75rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.514);
 }
-
-.card .repoInfo .repoNumber, .card .repoInfo .followersNumber, .card .repoInfo .followingNumber {
-  color: white;
+.repo-info .repo-number, .repo-info .followers-number, .repo-info .following-number {
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
-.card .locaters {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.locaters {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.locaters > * {
+  width: 45%;
 }
 
-.card .leftLocator, .card .rightLocator {
-  padding: 1rem 0rem;
-}
-
-.card .city, .card .url, .card .twitter, .card .company {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.city, .url, .twitter, .company {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 13rem;
-  max-width: 13rem;
-  padding-right: 0 2rem;
+  align-items: center;
   color: rgba(255, 255, 255, 0.603);
   word-break: break-all;
-  font-family: 'Roboto Slab', serif;
-  font-size: .8rem;
+  font-family: "Roboto Slab", serif;
+}
+.city a, .url a, .twitter a, .company a {
+  color: rgb(255, 255, 255);
+}
+.city img, .url img, .twitter img, .company img {
+  padding: 0.5rem 1rem;
 }
 
-.card .city a:link, .card .url a:link, .card .twitter a:link, .card .company a:link {
-  color: white;
+@media (max-width: 800px) {
+  body {
+    margin: 0 1rem;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .card .icon-side {
+    width: unset;
+  }
+  .card .info-side {
+    width: unset;
+  }
+
+  .locaters {
+    flex-direction: column;
+  }
+  .locaters > * {
+    width: 100%;
+  }
 }
 
-.card .city img, .card .url img, .card .twitter img, .card .company img {
-  padding: .5rem 1rem;
-}
 /*# sourceMappingURL=style.css.map */
