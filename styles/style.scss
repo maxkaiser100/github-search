@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bodyBackground: #ffffff;
+    --bodyForeground: #333;
+    --cardBackground: rgb(190, 190, 190);
+    --transText: rgba(116, 116, 116, 0.836);
+    --boxShadow: 5px 10px 20px #888888;
+}
+
+.darkMode {
+    --bodyBackground: rgb(19, 28, 47);
+    --bodyForeground: #ffffff;
+    --cardBackground: rgb(30, 42, 72);
+    --transText: rgba(255, 255, 255, 0.514);
+    --boxShadow: none;
+}
+
+
 html {
     font-size: 18px;
     font-family: 'Roboto Slab', serif;
@@ -19,13 +36,14 @@ body {
     min-height: 250vh;
     justify-content: center;
     margin: 0px 0px; 
-    background-color: rgb(19, 28, 47);
+    background: var(--bodyBackground);
+    color: var(--bodyForeground);
     font-family: 'Roboto Slab', serif;
     
 }
 
 .whiteText {
-    color: rgb(255, 255, 255);
+    color: var(--bodyForeground);
 }
 
 
@@ -43,7 +61,6 @@ body {
     width: 40rem;
     display: flex;
     justify-content: space-between;
-    color: white;
     font-family: 'Roboto Slab', serif;
     align-items: center;
     margin-bottom: 2rem;
@@ -60,16 +77,23 @@ body {
             margin-left: 1rem;
         }
     }
+    .light {
+        display: none;
+    }
+    .dark {
+        display: block;
+    }
 }
 
 .searchBar {
-    background-color: rgb(30, 42, 72);
+    background: var(--cardBackground);
     width: 40rem;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
+    box-shadow: var(--boxShadow);
     .searchInput {
         display: flex;
         align-items: center;
@@ -81,12 +105,12 @@ body {
         padding: .5rem;
         border: 0;
         width: 20rem;
-        background-color: rgb(30, 42, 72);
+        background: var(--cardBackground);
         font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.733);
+        color: var(--transText);
     }
     ::placeholder {
-        color: rgba(255, 255, 255, 0.733);
+        color: var(--transText);
     }
     button {
         background-color: #0278ff;
@@ -95,17 +119,24 @@ body {
         font-size: 1.1rem;
         padding: .75rem 1.75rem;
         border-radius: 10px;
+        box-shadow: none;
+        border: none;
     }
+}
+
+#toggle:checked + button {
+    background-color: #FFFFFF;
 }
 
 .card{
     width: 40rem;
-    background-color: rgb(30, 42, 72);
+    background: var(--cardBackground);
     padding: 3rem;
     margin-top: 2rem;
     border-radius: 20px;
     display: flex;
-    color: white;
+    color: var(--bodyForeground);
+    box-shadow: var(--boxShadow);
     .iconSide {
         width: 30%;
         .iconImage img {
@@ -136,12 +167,12 @@ body {
         }
         .rightProfile {
             font-family: 'Roboto Slab', serif;
-            color: rgba(255, 255, 255, 0.514);
+            color: var(--transText);
             padding-top: .5rem;
         }
     }
     .profile {
-        color:rgba(255, 255, 255, 0.493);
+        color: var(--transText);
         font-family: 'Roboto Slab', serif;
     }
 }
@@ -152,16 +183,16 @@ body {
     margin: 2rem 0;
     padding: .5rem .5rem;
     font-family: 'Roboto Slab', serif;
-    background-color: rgb(19, 28, 47);
+    background: var(--bodyBackground);
     border-radius: 20px;
     justify-content: space-around;
     .repos, .followers, .following {
         padding: 1rem 1rem;
         font-size: .75rem;
-        color: rgba(255, 255, 255, 0.514);
+        color: var(--transText);
     }
     .repoNumber, .followersNumber, .followingNumber {
-        color: rgb(255, 255, 255);
+        color: var(--bodyForeground);
         font-size: 1.5rem;
         padding-top: .5rem;
     }
@@ -181,23 +212,40 @@ body {
     width: 13rem;
     max-width: 13rem;
     padding-right: 0 2rem;
-    color: rgba(255, 255, 255, 0.603);
+    color: var(--transText);
     word-break: break-all;
     font-family: 'Roboto Slab', serif;
     font-size: .8rem;
     a:link {
-        color: rgb(255, 255, 255);
+        color: var(--bodyForeground);
     }
     img {
         padding: .5rem 1rem;
     }
 }
 
-
-
-
-
 }
+
+
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//     --bodyBackground: rgb(19, 28, 47);
+//     --bodyForeground: #ffffff;
+//     --cardBackground: rgb(30, 42, 72);
+//     --transText: rgba(255, 255, 255, 0.514);
+//     --boxShadow: none;
+//     }
+
+//     .topNav .light {
+//         display: none;
+//     }
+
+//     .topNav .dark {
+//         display: block;
+//     }
+
+// }
 
 
 

@@ -3,6 +3,22 @@
           box-sizing: border-box;
 }
 
+:root {
+  --bodyBackground: #ffffff;
+  --bodyForeground: #333;
+  --cardBackground: rgb(190, 190, 190);
+  --transText: rgba(116, 116, 116, 0.836);
+  --boxShadow: 5px 10px 20px #888888;
+}
+
+.darkMode {
+  --bodyBackground: rgb(19, 28, 47);
+  --bodyForeground: #ffffff;
+  --cardBackground: rgb(30, 42, 72);
+  --transText: rgba(255, 255, 255, 0.514);
+  --boxShadow: none;
+}
+
 html {
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
@@ -22,12 +38,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0px 0px;
-  background-color: #131c2f;
+  background: var(--bodyBackground);
+  color: var(--bodyForeground);
   font-family: 'Roboto Slab', serif;
 }
 
 .whiteText {
-  color: white;
+  color: var(--bodyForeground);
 }
 
 .container {
@@ -54,7 +71,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: white;
   font-family: 'Roboto Slab', serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -82,8 +98,16 @@ body {
   margin-left: 1rem;
 }
 
+.topNav .light {
+  display: none;
+}
+
+.topNav .dark {
+  display: block;
+}
+
 .searchBar {
-  background-color: #1e2a48;
+  background: var(--cardBackground);
   width: 40rem;
   padding: 1rem;
   display: -webkit-box;
@@ -96,6 +120,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
 }
 
 .searchBar .searchInput {
@@ -115,25 +141,25 @@ body {
   padding: .5rem;
   border: 0;
   width: 20rem;
-  background-color: #1e2a48;
+  background: var(--cardBackground);
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.733);
+  color: var(--transText);
 }
 
 .searchBar ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.733);
+  color: var(--transText);
 }
 
 .searchBar :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.733);
+  color: var(--transText);
 }
 
 .searchBar ::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.733);
+  color: var(--transText);
 }
 
 .searchBar ::placeholder {
-  color: rgba(255, 255, 255, 0.733);
+  color: var(--transText);
 }
 
 .searchBar button {
@@ -143,18 +169,27 @@ body {
   font-size: 1.1rem;
   padding: .75rem 1.75rem;
   border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+#toggle:checked + button {
+  background-color: #FFFFFF;
 }
 
 .card {
   width: 40rem;
-  background-color: #1e2a48;
+  background: var(--cardBackground);
   padding: 3rem;
   margin-top: 2rem;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: var(--bodyForeground);
+  -webkit-box-shadow: var(--boxShadow);
+          box-shadow: var(--boxShadow);
 }
 
 .card .iconSide {
@@ -201,12 +236,12 @@ body {
 
 .card .infoSide .basicProfile .rightProfile {
   font-family: 'Roboto Slab', serif;
-  color: rgba(255, 255, 255, 0.514);
+  color: var(--transText);
   padding-top: .5rem;
 }
 
 .card .infoSide .profile {
-  color: rgba(255, 255, 255, 0.493);
+  color: var(--transText);
   font-family: 'Roboto Slab', serif;
 }
 
@@ -217,7 +252,7 @@ body {
   margin: 2rem 0;
   padding: .5rem .5rem;
   font-family: 'Roboto Slab', serif;
-  background-color: #131c2f;
+  background: var(--bodyBackground);
   border-radius: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -226,11 +261,11 @@ body {
 .card .repoInfo .repos, .card .repoInfo .followers, .card .repoInfo .following {
   padding: 1rem 1rem;
   font-size: .75rem;
-  color: rgba(255, 255, 255, 0.514);
+  color: var(--transText);
 }
 
 .card .repoInfo .repoNumber, .card .repoInfo .followersNumber, .card .repoInfo .followingNumber {
-  color: white;
+  color: var(--bodyForeground);
   font-size: 1.5rem;
   padding-top: .5rem;
 }
@@ -255,14 +290,14 @@ body {
   width: 13rem;
   max-width: 13rem;
   padding-right: 0 2rem;
-  color: rgba(255, 255, 255, 0.603);
+  color: var(--transText);
   word-break: break-all;
   font-family: 'Roboto Slab', serif;
   font-size: .8rem;
 }
 
 .card .city a:link, .card .url a:link, .card .twitter a:link, .card .company a:link {
-  color: white;
+  color: var(--bodyForeground);
 }
 
 .card .city img, .card .url img, .card .twitter img, .card .company img {

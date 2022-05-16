@@ -12,6 +12,12 @@ const dateArea = document.querySelector('.rightProfile');
 const searchForm = document.querySelector('form');
 const iconImage = document.querySelector('.iconImage');
 const input = document.getElementById('.form-input');
+const toggle = document.querySelector('.toggle');
+const light = document.querySelector('.light');
+const dark = document.querySelector('.dark');
+const container = document.querySelector('.container');
+let darkmode = localStorage.getItem('darkmode');
+
 
 // api url
 const api_url =
@@ -41,10 +47,7 @@ async function getapi(url, searchPerson) {
 searchForm.addEventListener('submit', e=> {
     e.preventDefault();
     const searchPerson = searchForm.userSearch.value.trim();
-  
-    // const searchPerson = ;
-    // console.log(searchPerson);
-    // searchForm.reset();
+ 
     getapi(api_url, searchPerson);
 })
 
@@ -100,8 +103,32 @@ function show(data){
         company.innerHTML = data.company;
         company.classList.add('whiteText');
     }
-    
-
-
 
 }
+
+const enableDarkMode = () => {
+    document.body.classList.add('darkMode');
+    localStorage.setItem('darkmode', 'enabled');
+    dark.style.display = 'none';
+    light.style.display = 'block';
+}
+
+const disableDarkMode = () => {
+    document.body.classList.remove('darkMode');
+    localStorage.setItem('darkmode', 'null');
+    light.style.display = 'none';
+    dark.style.display = 'block';
+}
+
+if(darkmode === 'enabled') {
+    enableDarkMode();
+}
+
+toggle.addEventListener('click', e=> {
+    darkmode = localStorage.getItem('darkmode');
+    if(darkmode !== 'enabled') {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+});
